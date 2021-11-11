@@ -17,6 +17,7 @@ import GiftCheck from './components/GiftCheck.vue'
   color: #2c3e50;
   background-color: #2c3e50;
   height: 100vh;
+  width: 100%;
 }
 body {
   margin: 0;
