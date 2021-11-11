@@ -23,6 +23,8 @@
         <div class="ball" @click="!disabled && turn()"></div>
       </div>
     </div>
+    <audio src="/public/little_fat.m4a" ref="playAuto" type="audio/x-m4a" class="auto-play"> 
+    </audio>  
     <div
       class="history"
       @click="openResultList = true">
@@ -110,6 +112,7 @@ export default {
   },
   methods: {
     turn () {
+      this.$refs.playAuto.play();
       this.active = true
       setTimeout(() => {
         this.active = false
@@ -132,6 +135,9 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Lobster');
+.auto-play {
+  display: none;
+}
 #SlotMachine {
   //
   $red: #ea5e56;

@@ -2,9 +2,6 @@
 import { ref } from 'vue'
 import Machine from './Machine.vue'
 
-
-
-const count = ref(0)
 </script>
 
 <template>
